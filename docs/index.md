@@ -4,7 +4,7 @@ This site lists all the known Train Compositions (locomotives, passenger carts, 
 
 ## Legend
 
-<span class="carriage locomotive">T</span> = Locomotive  
+<span class="carriage locomotive">L</span> = Locomotive  
 <span class="carriage">1</span> = 1st class  
 <span class="carriage">2</span> = 2nd class  
 <span class="carriage">1/2</span> = 1st and 2nd class  
@@ -21,7 +21,7 @@ This site lists all the known Train Compositions (locomotives, passenger carts, 
 **Provider:** {{ provider }}
 
 {% for part in composition -%}
-<span class="carriage {% if part == 't' %}locomotive{% endif %}" title="{{ set_title(part) }}">{{ part | upper() }}</span>
+<span class="carriage {% if part == 'l' %}locomotive{% endif %}" title="{{ set_title(part) }}">{{ part | upper() }}</span>
 {%- endfor %}
 {% endfor %}
 {% endfor %}
