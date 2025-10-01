@@ -1,13 +1,38 @@
+:root {
+    --md-train-carriage-bg-color: #9e9e9e1a;
+    --md-train-carriage-bg-color__hover: #9e9e9e;
+
+    --md-train-carriage-border-color: #9e9e9e;
+
+    --md-train-locomotive-bg-color: #448aff1a;
+    --md-train-locomotive-bg-color__hover: #448aff;
+
+    --md-train-locomotive-border-color: #448aff;
+}
+
 .carriage {
-    background-color: var(--md-default-fg-color);
-    color: black;
+    background-color: var(--md-train-carriage-bg-color);
+    border: 1px solid var(--md-train-carriage-border-color);
+    border-radius: 0.1rem;
 
     padding: 0 0.5rem;
     margin: 0 0.1rem;
     
     font: var(--md-code-font-family);
+
+    transition: color 125ms, background-color 125ms;
 }
 
 .locomotive {
-    background-color: #448aff
+    background-color: var(--md-train-locomotive-bg-color);
+    border-color: var(--md-train-locomotive-border-color);
+}
+
+.carriage:hover {
+    background-color: var(--md-train-carriage-bg-color__hover);
+    color: #000000de;
+}
+
+.carriage.locomotive:hover {
+    background-color: var(--md-train-locomotive-bg-color__hover);
 }
