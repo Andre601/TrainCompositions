@@ -9,14 +9,14 @@ The JSON file follows a specific structure:
 {
     "<line>": {
         "<provider>": [
-            "<part>", "<part>", "..."
+            ["<part>", "<part>", "..."]
         ]
     }
 }
 ```
 
 - `<line>` is the actual line the train(s) run on (i.e. HS300).
-- `<provider>` is the provider under which the specified composition is (i.e. DB).
+- `<provider>` is the provider under that has trains of the specified compositions (i.e. DB). Each entry is another List consisiting of `<part>` entries.
 - `<part>` is a string that matches one of the following options (Case insensitive):
     - `l` for a locomotive/powered car
     - `r` for a restaurant

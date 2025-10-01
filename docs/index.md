@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Train Compositions
 
 This site lists all the known Train Compositions (locomotives, passenger carts, etc.) that currently travel for specific lines on the Community Server of MrJulsen.
@@ -17,11 +22,13 @@ This site lists all the known Train Compositions (locomotives, passenger carts, 
 {% for line, trains in json.items() %}
 ### {{ line }}
 
-{% for provider, composition in trains.items() %}
+{% for provider, compositions in trains.items() %}
 **Provider:** {{ provider }}
 
-{% for part in composition -%}
+{% for train in compositions %}
+{% for part in train -%}
 <span class="carriage {% if part == 'l' %}locomotive{% endif %}" title="{{ set_title(part) }}">{{ part | upper() }}</span>
 {%- endfor %}
+{% endfor %}
 {% endfor %}
 {% endfor %}
