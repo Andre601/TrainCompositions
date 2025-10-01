@@ -1,0 +1,65 @@
+site_name: 'Train Setups'
+site_description: 'A website listing the different Train setups/Compositions on MrJulsen''s Community Server.'
+site_author: 'Andre_601'
+
+copyright: |
+  &copy; Andre_601 and Contributors.
+
+theme:
+  name: 'material'
+  palette:
+    scheme: 'slate'
+    primary: 'indigo'
+    secondary: 'indigo'
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - content.code.annotate
+    - content.tooltips
+
+extra_css:
+  - assets/stylesheets/display.css
+
+plugins:
+  - search
+  - macros:
+      module_name: macros
+
+markdown_extensions:
+  - markdown.extensions.toc:
+      permalink: true
+      toc_depth: 3
+  - markdown.extensions.attr_list:
+  - markdown.extensions.footnotes:
+  - markdown.extensions.md_in_html:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+  - pymdownx.inlinehilite:
+  - pymdownx.magiclink:
+  - pymdownx.superfences:
+  #- pymdownx.snippets:
+  #    base_path: docs/.snippets
+  #    auto_append:
+  #      - links.md
+  - pymdownx.blocks.admonition:
+      types:
+        - note
+        - abstract
+        - info
+        - tip
+        - success
+        - question
+        - warning
+        - failure
+        - danger
+        - bug
+        - example
+        - quote
+  - pymdownx.blocks.tab:
+      alternate_style: true
+  - pymdownx.blocks.details:
+  - pymdownx.blocks.html:

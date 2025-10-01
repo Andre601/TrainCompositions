@@ -1,0 +1,13 @@
+.carriage {
+    background-color: var(--md-default-fg-color);
+    color: black;
+
+    padding: 0 0.5rem;
+    margin: 0 0.1rem;
+    
+    font: var(--md-code-font-family);
+}
+
+.locomotive {
+    background-color: #448aff
+}
