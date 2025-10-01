@@ -24,8 +24,6 @@ The JSON file follows a specific structure:
     - `2` for 2nd class car
     - `1/2` for car with both 1st and 2nd class
 
-If A provider has multiple variants under the same line, you have to make a new provider entry for each one.
-
 ## License
 
 This project is licensed under MIT. See the [LICENSE](LICENSE) file for details.
