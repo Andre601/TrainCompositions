@@ -1,5 +1,8 @@
 # Train Composition Site
 
+> [!IMPORTANT]
+> This repository has been archived in favour of [railinfo.juliandev02.me](https://railinfo.juliandev02.me) having implemented such a system.
+
 This is a small project related to the Community Server of MrJulsen, which displays the train compositions (different parts of a train) on the server. The Data is obtained from a [JSON file](docs/assets/trains.json) in this repository and generated into Markdown + HTML for [MkDocs](https://mkdocs.org) to then render and display.
 
 ## JSON structure
